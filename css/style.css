@@ -55,15 +55,24 @@ nav {
   text-decoration: none;
 }
 
-.nav-logo img {
+.nav-logo-wrapper {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nav-logo img {
+  width: 48px;
+  height: 48px;
   object-fit: cover;
   object-position: center;
   display: block;
-  mask-image: radial-gradient(circle at center, black 0%, black 60%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle at center, black 0%, black 60%, transparent 100%);
+  transform: scale(1.5);
 }
 
 .nav-menu {
