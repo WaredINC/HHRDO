@@ -351,6 +351,10 @@ section:nth-child(even) > * {
   border-color: var(--teal);
 }
 
+.impact-card:hover svg {
+  transform: scale(1.1);
+}
+
 .impact-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
